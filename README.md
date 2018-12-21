@@ -5,7 +5,7 @@
 Matrices (plural for matrix) is a mathematical property/structure where lists of numbers are stored. They are used to perform a variety of important tasks in maths. 
 
 A matrix will have a set number of complete rows and columns with numbers in it. 
-(https://cdn.kastatic.org/googleusercontent/9XeqQ2stwpGbXuli1TWSbnHQwITfrYV_AtmjMFEtQZbAo9VvWQ0KYNBnyRx5x9Ekpwh_Pdwzu4dC6b3Y0Wb0Qsu5)
+![alt text](https://cdn.kastatic.org/googleusercontent/9XeqQ2stwpGbXuli1TWSbnHQwITfrYV_AtmjMFEtQZbAo9VvWQ0KYNBnyRx5x9Ekpwh_Pdwzu4dC6b3Y0Wb0Qsu5)
 
 ## Valid Matrices
 
