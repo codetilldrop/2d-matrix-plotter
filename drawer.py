@@ -3,8 +3,6 @@ import turtle
 import Tkinter
 
 pen = turtle.Pen()
-pen.penup()
-pen.fillcolor("white")
 coordinates_to_plot = []
 
 for matrix in matrice_plot_data:
@@ -17,41 +15,18 @@ for matrix in matrice_plot_data:
       y_val = coordinates[1] * 30
       coordinates_to_plot.append([x_val, y_val])
 
-pen.fill(True)
-pen.begin_fill()
 start = coordinates_to_plot[0]
-finish = coordinates_to_plot[-1]
 
-coordinates_to_plot.pop(0)
-coordinates_to_plot.pop(-1)
+right_side = coordinates_to_plot[len(coordinates_to_plot)//2:]
+right_side = right_side[::-1]
 
-pen.setpos(start[0], start[1])
-pen.pendown()
+coordinates_to_plot = coordinates_to_plot[:len(coordinates_to_plot)//2] + right_side
+pen.penup()
 
-for coordinate in coordinates_to_plot:
-  pen.setpos(coordinate[0], coordinate[1]) 
-  pen.penup()
-  pen.setpos(start[0], start[1])
+for cooridinate in coordinates_to_plot:
+  pen.setpos(cooridinate[0], cooridinate[1])
   pen.pendown()
 
-
-pen.penup()
-pen.setpos(finish[0], finish[1])
-pen.pendown()
-
-for coordinate in coordinates_to_plot:
-  pen.setpos(coordinate[0], coordinate[1]) 
-  pen.penup()
-  pen.setpos(finish[0], finish[1])
-  pen.pendown()
-
-pen.penup()
 pen.setpos(start[0], start[1])
-pen.pendown()
-pen.setpos(finish[0], finish[1])
-
-pen.end_fill()
-
-
 
 Tkinter.mainloop()
