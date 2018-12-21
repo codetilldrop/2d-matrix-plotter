@@ -24,7 +24,7 @@ def new_matrix (line):
     global IS_NEW_MATRIX
     global curr_matrix_row
     global curr_matrix_col
-    
+
     IS_NEW_MATRIX = True
     matrice_plot_data.append({})
     curr_matrix_row = 1
@@ -49,5 +49,3 @@ for idx, line in enumerate(file):
 
     curr_matrix_row += 1
     curr_matrix_col = 1
-
-print matrice_plot_data
