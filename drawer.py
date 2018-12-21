@@ -4,7 +4,7 @@ import Tkinter
 
 pen = turtle.Pen()
 pen.penup()
-pen.fillcolor("black")
+pen.fillcolor("white")
 coordinates_to_plot = []
 
 for matrix in matrice_plot_data:
@@ -13,8 +13,8 @@ for matrix in matrice_plot_data:
     coordinates = coordinate_data[1]
     
     if valid_coordinate == 1:
-      x_val = coordinates[0] * 100
-      y_val = coordinates[1] * 100
+      x_val = coordinates[0] * 30
+      y_val = coordinates[1] * 30
       coordinates_to_plot.append([x_val, y_val])
 
 pen.fill(True)
@@ -44,6 +44,11 @@ for coordinate in coordinates_to_plot:
   pen.penup()
   pen.setpos(finish[0], finish[1])
   pen.pendown()
+
+pen.penup()
+pen.setpos(start[0], start[1])
+pen.pendown()
+pen.setpos(finish[0], finish[1])
 
 pen.end_fill()
 
