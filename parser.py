@@ -26,13 +26,10 @@ def new_matrix (line):
     global curr_matrix_col
 
     IS_NEW_MATRIX = True
-    matrice_plot_data.append({})
+    matrice_plot_data.append([])
     curr_matrix_row = 1
     curr_matrix_col = 1
     return True
-
-
-
 
 for idx, line in enumerate(file):
   line = line.rstrip()
@@ -43,8 +40,8 @@ for idx, line in enumerate(file):
     for char in line:
       if char != " " and char != "]":
         matrix = matrice_plot_data[curr_matrice_idx]
-        coordinates = tuple([curr_matrix_row, curr_matrix_col])
-        matrix[coordinates] = char
+        data = [int(char), [curr_matrix_row, curr_matrix_col]]
+        matrix.append(data)
         curr_matrix_col += 1
 
     curr_matrix_row += 1
