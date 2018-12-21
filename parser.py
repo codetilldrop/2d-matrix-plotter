@@ -1,6 +1,6 @@
 # Program to parse a given matrix in matrix.txt
 
-file = open('matrix.txt')
+file = open('matrices.txt')
 
 # matrice_plot_data will be a list which consists of 
 # a dictionary per matrix in matrix.txt. A dictionary 
