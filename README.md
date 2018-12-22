@@ -9,7 +9,7 @@ A matrix will have a set number of complete rows and columns with numbers in it.
 
 ## Valid Matrices
 
-A user of the program can enter a matrix into matrix.txt. To enter a matrix, it's form can look like the following
+A user of the program can enter a matrix into matrice.txt. To enter a matrix, it's form can look like the following
 
 ```
 [
@@ -44,5 +44,7 @@ Example: a₍₁,₁₎ = 0
 ### How the Plotting Works
 
 Now that we know how Matrix indexes are referenced and how to represent one, it is time to get into the computer-side of matters
+
+When writing a matrix, put a 1 at any given element position if you want that point as a vertex. Otherwise put a 0
 
 
