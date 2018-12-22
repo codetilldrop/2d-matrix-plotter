@@ -45,6 +45,6 @@ Example: a₍₁,₁₎ = 0
 
 Now that we know how Matrix indexes are referenced and how to represent one, it is time to get into the computer-side of matters
 
-When writing a matrix, put a 1 at any given element position if you want that point as a vertex. Otherwise put a 0
+When writing a matrix, put a 1 at any given element position if you want that point as a vertex. Otherwise put a 0. 
 
 
