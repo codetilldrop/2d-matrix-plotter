@@ -56,7 +56,9 @@ To use 2d-matrix-plotter, perform the following steps
 3. Type in your matrix following the syntax discussed above
 4. Run drawer.py and watch the results
 
+### Limitations
 
+Ability to enter more than one matrix in matrices.txt is unsupported (for now)
 
 
 
