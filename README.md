@@ -47,4 +47,16 @@ Now that we know how Matrix indexes are referenced and how to represent one, it 
 
 When writing a matrix, put a 1 at any given element position if you want that point as a vertex. Otherwise put a 0. 
 
+### Installation
+
+To use 2d-matrix-plotter, perform the following steps
+
+1. Clone this repo
+2. Open up matrice.txt
+3. Type in your matrix following the syntax discussed above
+4. Run drawer.py and watch the results
+
+
+
+
 
